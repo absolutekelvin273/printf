@@ -31,6 +31,8 @@ typedef struct printHandler
 } ph;
 /* _printf */
 int _printf(const char *format, ...);
+/* get_print */
+int (*get_print(char s))(va_list, flags_t *);
 /* print_int */
 int print_int(va_list l, flags_t *f);
 void print_number(int n);
@@ -48,4 +50,6 @@ int print_char(va_list l, flags_t *f);
 char *convert(unsigned long int num, int base, int lowercase);
 /* print_percent */
 int print_percent(va_list l, flags_t *f);
+/*print_custom*/
+int print_bigS(va_list l, flags_t *f);
 #endif
