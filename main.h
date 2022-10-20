@@ -44,4 +44,6 @@ int _puts(char *str);
 /* print_alpha */
 int print_string(va_list l, flags_t *f);
 int print_char(va_list l, flags_t *f);
+/* converter */
+char *convert(unsigned long int num, int base, int lowercase);
 #endif
