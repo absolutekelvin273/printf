@@ -52,4 +52,13 @@ char *convert(unsigned long int num, int base, int lowercase);
 int print_percent(va_list l, flags_t *f);
 /*print_custom*/
 int print_bigS(va_list l, flags_t *f);
+int print_rev(va_list l, flags_t *f);
+int print_rot13(va_list l, flags_t *f);
+/*print_bases*/
+int print_hex(va_list l, flags_t *f);
+int print_hex_big(va_list l, flags_t *f);
+int print_binary(va_list l, flags_t *f);
+int print_octal(va_list l, flags_t *f);
+/* print_address */
+int print_address(va_list l, flags_t *f);
 #endif
